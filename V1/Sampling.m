@@ -16,8 +16,8 @@ function parts_S = Sampling(parts, h, w, nsample, nselect, radiusp)
             stop = 0;
             while stop == 0
                 % Déplacement aléatoire du fils
-                parts_S(2,k) = parts_S(2,father) + randi([-radiusp/2, radiusp/2]);
-                parts_S(3,k) = parts_S(3,father) + randi([-radiusp/2, radiusp/2]);
+                parts_S(2,k) = parts_S(2,father) + round(randn()*radiusp/4);
+                parts_S(3,k) = parts_S(3,father) + round(randn()*radiusp/4);
                 stop = 1;
 
                 % Respect des bordures de l'image
