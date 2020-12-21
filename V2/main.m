@@ -24,14 +24,9 @@ for k=1:npart
    parts(1,k) = 1/npart;      % w
    parts(2,k) = randi([2,w-1]); % x
    parts(3,k) = randi([2,h-1]); % y
-   parts(5,k) = k;
 
    % Partie 2
    parts(4,k) = randi([0,3])*90; % direction de la tête
-%     90°  Haut
-%     0°   Droite
-%     270° Bas
-%     180° Gauche
    parts(5,k) = 1/npart; % w à l'itération précédente
    parts(6,k) = 2/npart; % somme w sur deux itérations
 end

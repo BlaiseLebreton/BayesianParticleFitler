@@ -1,5 +1,4 @@
 function parts_Z = Mesure(parts, I)
-    [h, w, ~] = size(I);
     parts_Z = parts;
 
     for k=1:size(parts,2)

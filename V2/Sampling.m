@@ -17,10 +17,8 @@ function parts_S = Sampling(parts, h, w, nsample, nselect, radiusp)
             stop = 0;
             while stop == 0
                 % Déplacement aléatoire du fils
-%                 dx = randi([-radiusp/2, radiusp/2]);
-%                 dy = randi([-radiusp/2, radiusp/2]);
-                dx = round(randn()*radiusp/3);
-                dy = round(randn()*radiusp/3);
+                dx = round(randn()*radiusp/4);
+                dy = round(randn()*radiusp/4);
                 if parts_S(4,father) == 90 || parts_S(4,father) == 270
                     dx = round(dx / 2);
                 else
