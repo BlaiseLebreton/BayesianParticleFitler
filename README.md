@@ -14,4 +14,4 @@ The steps are as follows :
 V1 is a simple version with the whole body being tracked (particles have weights, pos x, pos y)<br>
 V2 is a bit more complex, only the head is tracked (particles have current weights, pos x, pos y, head orientation, previous weight)
 
-Can be seen in action here https://youtu.be/U_L2d5VWTDI
+Can be seen in action here https://youtu.be/2oWaSpVfu4s
